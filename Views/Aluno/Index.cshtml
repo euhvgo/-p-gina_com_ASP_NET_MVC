@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Perfil do Aluno";
+}
+
+<h1>Perfil do Aluno</h1>
+
+<div class="card shadow-sm mt-4">
+    <div class="card-body">
+        <p><strong>Nome:</strong> @ViewBag.Nome</p>
+        <p><strong>Curso:</strong> @ViewBag.Curso</p>
+        <p><strong>Semestre:</strong> @ViewBag.Semestre</p>
+    </div>
+</div>
+
+<p class="mt-3">
+    <a asp-controller="Aluno" asp-action="Detalhes" asp-route-id="1" class="btn btn-primary">Ver detalhes do aluno 1</a>
+</p>
